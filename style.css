@@ -1,0 +1,181 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #014616;
+}
+
+/* Bagian header */
+header {
+    background-color: #014616;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Bagian utama */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Tombol donasi */
+button {
+    background-color: #014616;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e7d2f;
+}
+
+/* Gambar kucing */
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* About */
+.about {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Kotak donasi */
+.donate-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Isi kotak */
+.donate-content {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.donate-content h2 {
+    margin-bottom: 15px;
+}
+
+.donate-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Tombol X */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* QR */
+.qr {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+}
+```
